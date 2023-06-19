@@ -1,0 +1,289 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <!-- Open Graph 설정 -->
+    <meta property="og:title" content="FASHION SCANNER">
+    <meta property="og:description" content="#AI #FASHION #SCANNING #BLACKPINK #VERSION">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.fashion-scanner.site">
+    <meta property="og:image" content="http://www.fashion-scanner.site/images/common/fs_sharing_logo.png">
+    
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- 브라우저에서 제공하는 기본적인 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <!-- 폰트(Fonts) 적용 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- 스포카 폰트(Fonts) 적용 -->
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Material Icons 사용 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- 카카오 SDK 등록 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <link rel="stylesheet" href="./css/navigation.css">
+    <title>FASHION SCANNER</title>
+    <!-- <script defer="" src="./js/bundle.js"></script> -->
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+    	<div class="home">
+          <header>
+            <nav class="inner">
+              <a href="/" class="logo"><img src="/images/common/fs_s3_logo.png" alt="FASHION SCANNER"></a>
+              <span class="material-icons">menu</span>
+              <div class="link-group ">
+                <ul class="link">
+                  <li><a href="#section__introduction">서비스 소개</a></li>
+                  <li><a href="#section__lookbook">룩북</a></li>
+                  <li><a href="#section__memberMatching">멤버 매칭</a></li>
+                  <li><a href="#section__request">요청하기</a></li>
+                </ul>
+              </div>
+              <div class="language-group">
+                <ul class="language">
+                  <li class="lang ">KOR</li>
+                  <span>|</span>
+                  <li class="lang ">ENG</li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          
+          <section class="title" id="section__title">
+            <div class="title__inner">
+              <img src="/images/home/fs_s1_logo.png" alt="FASHION SCANNER">
+              <h2>DISCOVER THE NEW TRENDS</h2>
+            </div>
+            <video autoplay="" loop="" playsinline="" id="bg-video">
+              <source src="/static/media/background.119515df11f87ace2837.mp4" type="video/mp4">
+            </video>
+          </section>
+
+          <section class="introduction" id="section__introduction">
+            <div class="introduction__inner">
+              <video autoplay="" loop="" playsinline="" class="introduction__bg "><source src="/static/media/intro.c2c1c2745b4d1e9e184b.mp4" type="video/mp4"></video>
+              <ul>
+                <li class="introduction__title ">
+                <h2>케이팝 스타들의 패션을 스캔합니다</h2>
+                </li>
+                <li class="introduction__keyword ">
+                  <span>#AI</span>
+                  <span>#IMAGE_SCANNING</span>
+                  <span>#FASHION</span>
+                  <span>#K-POP_STAR</span>
+                </li>
+                <li class="introduction__logos ">
+                  <div>
+                    <img src="/images/home/ai_logo.png" alt="AI">
+                    <p>
+                      AI
+                    </p>
+                  </div>
+                  <div>
+                    <img src="/images/home/scanner_logo.png" alt="Scanner">
+                    <p>
+                      Scanning
+                    </p>
+                  </div>
+                  <div>
+                    <img src="/images/home/fashion_logo.png" alt="Fashion">
+                    <p>
+                      Fashion
+                    </p>
+                  </div>
+                </li>
+                <li class="introduction__dsc ">
+                  <p>
+                    패션 스캐너는 업계에서 가장 HOT 한 케이팝 스타들의 패션을 분석합니다.<br>
+                    패션 전문 인공지능과 함께 새로운 패션 트렌드를 확인해보세요.
+                  </p>
+                </li>
+              </ul>
+              <a class="material-icons " href="#section__magazine">expand_more</a>
+            </div>
+          </section>
+
+          <section class="magazine" id="section__magazine">
+            <div class="magazine__inner">
+              <div class="magazine__title">
+                <img src="/images/home/blackpink_logo.png" alt="BLACKPINK">
+              </div>
+              <div class="magazine__info">
+                <div class="magazine__video">
+                  <video autoplay="" playsinline="">
+                    <source src="/static/media/magazine.4d8014043570d5537ff4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="magazine__dsc">
+                  <p>
+                     패션 트렌드를 따라가는 사람들이 좋아하는 아이돌 블랙핑크<br>
+                     한류 콘텐츠의 힘이 커지면서 블랙핑크의 행보가 패션업계에서도 '핫이슈'입니다.<br>
+                     빼어난 패션 감각과 고급스러운 이미지에 멤버 모두가 해외 명품 브랜드의 엠버서더로 활약하고 있습니다.<br>
+                     "Never wear the same outfits"<br>
+                     그녀들이 입은 옷은 현재 '새로운 패션 트렌드의 시작'으로 평가됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bpVideo" id="section__bpVideo">
+            <div class="bpVideo__inner">
+              <video controls="" autoplay="" loop="" playsinline="">
+                <source src="/static/media/fashionIcon.55a5f5d97fdbfbc41d9f.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+            
+          <section class="lookbook" id="section__lookbook">
+            <div class="lookbook__inner">
+              <div class="lookbook__title">
+                <img src="/images/home/lookbook_logo.png" alt="BLACKPINK LOOKBOOK">
+                <span>멤버들을 클릭하여 룩북을 확인해보세요.</span>
+              </div>
+              <div class="lookbook__members">
+                <a href="/lookbook/jisoo">
+                  <img class="member" src="/images/home/jisoo_btn_photo.jpg" alt="JISOO">
+                </a>
+                <a href="/lookbook/jennie">
+                  <img class="member" src="/images/home/jennie_btn_photo.jpg" alt="JENNIE">
+                </a>
+                <a href="/lookbook/lisa">
+                  <img class="member" src="/images/home/lisa_btn_photo.jpg" alt="LISA">
+                </a>
+                <a href="/lookbook/rose">
+                  <img class="member" src="/images/home/rose_btn_photo.jpg" alt="ROSE">
+                </a>
+              </div>
+            </div>
+          </section>
+          
+          <section class="memberMatching" id="section__memberMatching">
+            <div class="memberMatching__inner">
+              <div class="memberMatching__contents">
+                <div class="contents__title">
+                  <img src="/images/home/matching_logo1.png" alt="WHICH MEMBER">
+                  <img src="/images/home/matching_logo2.png" alt="ARE YOU?">
+                </div>
+                <div class="contents__dsc">
+                  <p>
+                     본인의 평소 입는 스타일의 옷을 업로드해보세요.<br>
+                     AI가 어떤 멤버와 패션 성향이 가장 비슷한지 알려드립니다.
+                  </p>
+                </div>
+                <div class="contents__btn">
+                  <a href="/matching">바로가기</a>
+                </div>
+              </div>
+              <div class="memberMatching__img">
+                <img src="/images/home/matching_group_photo.png" alt="GROUP Photo">
+              </div>
+            </div>
+          </section>
+          
+          <section class="request" id="section__request">
+            <div class="request__inner">
+              <div class="request__title">
+                <h2>패션 스캐너를 즐기는<br>
+                 또 다른 방법</h2>
+                <p>
+                  <span>#FASHIONSCANNER</span><span>#요청하기</span>
+                </p>
+              </div>
+              <div class="request__body">
+                <div class="body__image">
+                  <div class="image__preview">
+                    <img src="/images/request_sample.jpg" alt="sample">
+                  </div>
+                  <div class="image__upload">
+                    <label class="material-icons" for="reqeust-file">upload_file<span>사진 업로드</span></label><input type="file" id="reqeust-file" accept="image/*" style="display: none;">
+                  </div>
+                </div>
+                <div class="body__info">
+                  <p>
+                     룩북에 추가하고 싶은 사진이 있으신가요?<br>
+                     블랙핑크 멤버가 입은 옷과 비슷한 옷을 한 번에 찾고 싶으신가요? 그럼 사진을 공유해주세요!<br>
+                     요청해 주신 사진은 패션 스캐너의 인공지능 시스템을 거쳐 룩북에 추가될 예정입니다.
+                  </p>
+                  <span>※ 이메일 입력 시 요청 사진이 업로드되면 알림 메일을 보내드립니다.</span>
+                  <form>
+                    <div class="info__input">
+                      <input type="email" placeholder="e-mail" value="">
+                      <p class="info__agree">
+                         &nbsp;&nbsp;* 이메일 입력은 선택사항입니다.
+                      </p>
+                      <label><input type="checkbox" disabled="">이메일 수집 및 이용에 대한 동의</label>
+                    </div>
+                  </form>
+                  <button>요청하기</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <footer>
+            <div class="inner">
+              <div class="info">
+                <div class="info__contact">
+                  <ul>
+                    <li><img src="/images/common/fs_s2_logo.png" alt="FASHION SCANNER"></li>
+                    <li>
+                    <p>
+                      <span class="material-icons">place</span>서울특별시 강남구 선릉로 433 세방빌딩 6층
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                      <span class="material-icons">phone</span>02-5986-8861
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                      <span class="material-icons">email</span>support@fashionscanner.com
+                    </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info__team">
+                  <ul>
+                    <li class="team__dev">
+                    <ul>
+                      <li><a href="/devTeam">조직문화</a></li>
+                      <li><a href="/faq">자주 묻는 질문</a></li>
+                    </ul>
+                    </li>
+                    <li class="team__sns">
+                    <ul>
+                      <li>
+                      <h3>GET TO KNOW US</h3>
+                      </li>
+                      <li><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16 sns__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg><a href="https://www.instagram.com/fashion__scanner"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14 sns__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 sns__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></li>
+                    </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="copyright">
+                <p>
+                  <span class="material-icons">copyright</span>Copyright Fashion Scanner. All Rights Reserved, 2021
+                </p>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+    </div>
+  </body>
+</html>
