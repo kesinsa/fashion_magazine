@@ -1,6 +1,9 @@
 <html lang="ko">
   <head>  
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/fullpage.css">
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/3d_slide.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +31,16 @@
     <!-- 카카오 SDK 등록 -->
     <link rel="stylesheet" href="./css/navigation.css">
     <title>FASHION MAGAZINE</title>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
     <!-- <script defer="" src="./js/bundle.js"></script> -->
+    <script>
+      $(function () {
+          $(".option").click(function(){
+              $(".option").removeClass("active");
+              $(this).addClass("active");
+          });
+      });
+  </script>
 </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -37,7 +49,7 @@
           <header>
             <nav class="inner">
               <a href="#" class="logo">
-                <img src="./images/black_pink/common/fs_s3_logo.png" alt="FASHION MAGAZINE">
+                <img src="./image/common/fs_s3_logo.png" alt="FASHION MAGAZINE">
               </a>
               <span class="material-icons">menu</span>
               <div class="link-group ">
@@ -59,194 +71,248 @@
               </div>
             </nav>
           </header>
-          
-          <section class="title" id="section__title">
-            <div class="title__inner">
-              <img src="./images/black_pink/home/fs_s1_logo.png" alt="FASHION MAGAZINE">
-              <h2>DISCOVER THE NEW TRENDS</h2>
+          <section class="title" id="section__slide">
+              <div class="options">
+                <div id="slide_0" class="option active">
+                  <div class="shadow"></div>
+                  <div class="label">
+                      <img src="./image/blackpink/logo.png" width="150px">
+                  </div>
+                </div>
+                <div id="slide_1" class="option">
+                  <div class="shadow"></div>
+                  <div class="label">
+                    <img src="./image/ive/logo.png" width="100px">
+                  </div>
+                </div>
+                <div id="slide_2" class="option">
+                  <div class="shadow"></div>
+                  <div class="label">
+                      <div class="icon">
+                        <i class="fas fa-tree"></i>
+                      </div>
+                      <div class="info">
+                        <div class="main">Iteresuselle</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                      </div>
+                  </div>
+                </div>
+                <div id="slide_3" class="option">
+                  <div class="shadow"></div>
+                  <div class="label">
+                      <div class="icon">
+                        <i class="fas fa-tint"></i>
+                      </div>
+                      <div class="info">
+                        <div class="main">Idiefe</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                      </div>
+                  </div>
+                </div>
+                <div id="slide_4" class="option">
+                  <div class="shadow"></div>
+                  <div class="label">
+                      <div class="icon">
+                        <i class="fas fa-sun"></i>
+                      </div>
+                      <div class="info">
+                        <div class="main">Inatethi</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                      </div>
+                  </div>
+                </div>
             </div>
-            <video playsinline="" id="bg-video" autoplay loop muted>
-              <source src="./videos/background.mp4" type="video/mp4">
-            </video>
           </section>
 
-          <section class="introduction" id="section__introduction">
-            <div class="introduction__inner">
-              <video autoplay="" loop="" playsinline="" muted class="introduction__bg ">
-                <source src="./videos/intro.mp4" type="video/mp4">
+
+          <div id="full_page">
+            <section class="title section" id="section__title">
+              <div class="title__inner">
+                <img src="./image/common/fs_s1_logo.png" alt="FASHION MAGAZINE">
+                <h2>DISCOVER THE NEW TRENDS</h2>
+              </div>
+              <video playsinline="" id="bg-video" autoplay loop muted>
+                <source src="./videos/background.mp4" type="video/mp4">
               </video>
-              <ul>
-                <li class="introduction__title ">
-                <h2>케이팝 스타들의 패션을 매칭합니다</h2>
-                </li>
-                <li class="introduction__keyword ">
-                  <span>#FASHION</span>
-                  <span>#TRENDING</span>
-                  <span>#LOOKBOOK</span>
-                  <span>#K-POP_STAR</span>
-                </li>
-                <li class="introduction__logos ">                  
-                  <div>
-                    <img src="./images/black_pink/home/fashion_logo.png" alt="Fashion">
-                    <p>
-                      Fashion
-                    </p>
-                  </div>
-                  <div>
-                    <img src="./images/black_pink/home/trending_icon.png" alt="AI">
-                    <p>
-                      Trending
-                    </p>
-                  </div>
-                  <div>
-                    <img src="./images/black_pink/home/scanner_logo.png" alt="Scanner">
-                    <p>
-                      LookBook
-                    </p>
-                  </div>
-                  <div>
-                    <img src="./images/black_pink/home/kpop_star_icon.png" alt="Scanner">
-                    <p>
-                      K-POP
-                    </p>
-                  </div>
-                </li>
-                <li class="introduction__dsc ">
-                  <p>
-                    패션 매거진은 업계에서 가장 HOT 한 케이팝 스타들의 패션을 분석하고<br>
-                    요즘 MZ시대에 맞는 트랜드 있는 스타일을 보여드립니다<br>
-                    이제 패션 메거진을 통해 패션 전문가들에 새로운 패션 트렌드를 확인해보세요.
-                  </p>
-                </li>
-              </ul>
-              <a class="material-icons " href="#section__magazine">expand_more</a>
-            </div>
-          </section>
+            </section>
 
-          <section class="magazine" id="section__magazine">
-            <div class="magazine__inner">
-              <div class="magazine__title">
-                <img src="./images/black_pink/home/blackpink_logo.png" alt="BLACKPINK">
-              </div>
-              <div class="magazine__info">
-                <div class="magazine__video">
-                  <video autoplay="" playsinline="" muted>
-                    <source src="./videos/magazine.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="magazine__dsc">
-                  <p>
-                     패션 트렌드를 따라가는 사람들이 좋아하는 아이돌 블랙핑크<br>
-                     한류 콘텐츠의 힘이 커지면서 블랙핑크의 행보가 패션업계에서도 '핫이슈'입니다.<br>
-                     빼어난 패션 감각과 고급스러운 이미지에 멤버 모두가 해외 명품 브랜드의 엠버서더로 활약하고 있습니다.<br>
-                     "Never wear the same outfits"<br>
-                     그녀들이 입은 옷은 현재 '새로운 패션 트렌드의 시작'으로 평가됩니다.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="bpVideo" id="section__bpVideo">
-            <div class="bpVideo__inner">
-              <video controls="" autoplay="" loop="" playsinline="">
-                <source src="./videos/fashionIcon.mp4" type="video/mp4">
-              </video>
-            </div>
-          </section>
-            
-          <section class="lookbook" id="section__lookbook">
-            <div class="lookbook__inner">
-              <div class="lookbook__title">
-                <img src="./images/black_pink/home/lookbook_logo.png" alt="BLACKPINK LOOKBOOK">
-                <span>멤버들을 클릭하여 룩북을 확인해보세요.</span>
-              </div>
-              <div class="lookbook__members">
-                <a href="#">
-                  <img class="member" src="./images/black_pink/home/jisoo_btn_photo.jpg" alt="JISOO">
-                </a>
-                <a href="#">
-                  <img class="member" src="./images/black_pink/home/jennie_btn_photo.jpg" alt="JENNIE">
-                </a>
-                <a href="#">
-                  <img class="member" src="./images/black_pink/home/lisa_btn_photo.jpg" alt="LISA">
-                </a>
-                <a href="#">
-                  <img class="member" src="./images/black_pink/home/rose_btn_photo.jpg" alt="ROSE">
-                </a>
-              </div>
-            </div>
-          </section>
-          
-          <section class="memberMatching" id="section__memberMatching">
-            <div class="memberMatching__inner">
-              <div class="memberMatching__contents">
-                <div class="contents__title">
-                  <img src="./images/black_pink/home/matching_logo1.png" alt="WHICH MEMBER">
-                  <img src="./images/black_pink/home/matching_logo2.png" alt="ARE YOU?">
-                </div>
-                <div class="contents__dsc">
-                  <p>
-                     본인의 평소 입는 스타일의 옷을 업로드해보세요.<br>
-                     AI가 어떤 멤버와 패션 성향이 가장 비슷한지 알려드립니다.
-                  </p>
-                </div>
-                <div class="contents__btn">
-                  <a href="#">바로가기</a>
-                </div>
-              </div>
-              <div class="memberMatching__img">
-                <img src="./images/black_pink/home/matching_group_photo.png" alt="GROUP Photo">
-              </div>
-            </div>
-          </section>
-          
-          <section class="request" id="section__request">
-            <div class="request__inner">
-              <div class="request__title">
-                <h2>패션 스캐너를 즐기는<br>
-                 또 다른 방법</h2>
-                <p>
-                  <span>#FASHIONSCANNER</span><span>#요청하기</span>
-                </p>
-              </div>
-              <div class="request__body">
-                <div class="body__image">
-                  <div class="image__preview">
-                    <img src="./images/request_sample.jpg" alt="sample">
-                  </div>
-                  <div class="image__upload">
-                    <label class="material-icons" for="reqeust-file">upload_file<span>사진 업로드</span></label><input type="file" id="reqeust-file" accept="image/*" style="display: none;">
-                  </div>
-                </div>
-                <div class="body__info">
-                  <p>
-                     룩북에 추가하고 싶은 사진이 있으신가요?<br>
-                     블랙핑크 멤버가 입은 옷과 비슷한 옷을 한 번에 찾고 싶으신가요? 그럼 사진을 공유해주세요!<br>
-                     요청해 주신 사진은 패션 스캐너의 인공지능 시스템을 거쳐 룩북에 추가될 예정입니다.
-                  </p>
-                  <span>※ 이메일 입력 시 요청 사진이 업로드되면 알림 메일을 보내드립니다.</span>
-                  <form>
-                    <div class="info__input">
-                      <input type="email" placeholder="e-mail" value="">
-                      <p class="info__agree">
-                         &nbsp;&nbsp;* 이메일 입력은 선택사항입니다.
+            <section class="introduction section" id="section__introduction">
+              <div class="introduction__inner">
+                <video autoplay="" loop="" playsinline="" muted class="introduction__bg ">
+                  <source src="./videos/intro.mp4" type="video/mp4">
+                </video>
+                <ul>
+                  <li class="introduction__title ">
+                  <h2>케이팝 스타들의 패션을 매칭합니다</h2>
+                  </li>
+                  <li class="introduction__keyword ">
+                    <span>#FASHION</span>
+                    <span>#TRENDING</span>
+                    <span>#LOOKBOOK</span>
+                    <span>#K-POP_STAR</span>
+                  </li>
+                  <li class="introduction__logos ">                  
+                    <div>
+                      <img src="./image/common/fashion_logo.png" alt="Fashion">
+                      <p>
+                        Fashion
                       </p>
-                      <label><input type="checkbox" disabled="">이메일 수집 및 이용에 대한 동의</label>
                     </div>
-                  </form>
-                  <button>요청하기</button>
+                    <div>
+                      <img src="./image/common/trending_icon.png" alt="AI">
+                      <p>
+                        Trending
+                      </p>
+                    </div>
+                    <div>
+                      <img src="./image/common/scanner_logo.png" alt="Scanner">
+                      <p>
+                        LookBook
+                      </p>
+                    </div>
+                    <div>
+                      <img src="./image/common/kpop_star_icon.png" alt="Scanner">
+                      <p>
+                        K-POP
+                      </p>
+                    </div>
+                  </li>
+                  <li class="introduction__dsc ">
+                    <p>
+                      패션 매거진은 업계에서 가장 HOT 한 케이팝 스타들의 패션을 분석하고<br>
+                      요즘 MZ시대에 맞는 트랜드 있는 스타일을 보여드립니다<br>
+                      이제 패션 메거진을 통해 패션 전문가들에 새로운 패션 트렌드를 확인해보세요.
+                    </p>
+                  </li>
+                </ul>
+                <a class="material-icons " href="#section__magazine">expand_more</a>
+              </div>
+            </section>
+
+            <section class="magazine section" id="section__magazine">
+              <div class="magazine__inner">
+                <div class="magazine__title">
+                  <img src="./image/blackpink/logo.png" alt="BLACKPINK">
+                </div>
+                <div class="magazine__info">
+                  <div class="magazine__video">
+                    <video autoplay="" playsinline="" muted>
+                      <source src="./videos/blackpink/magazine.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="magazine__dsc">
+                    <p>
+                      패션 트렌드를 따라가는 사람들이 좋아하는 아이돌 블랙핑크<br>
+                      한류 콘텐츠의 힘이 커지면서 블랙핑크의 행보가 패션업계에서도 '핫이슈'입니다.<br>
+                      빼어난 패션 감각과 고급스러운 이미지에 멤버 모두가 해외 명품 브랜드의 엠버서더로 활약하고 있습니다.<br>
+                      "Never wear the same outfits"<br>
+                      그녀들이 입은 옷은 현재 '새로운 패션 트렌드의 시작'으로 평가됩니다.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-          
+            </section>
+
+            <section class="bpVideo section" id="section__bpVideo">
+              <div class="bpVideo__inner">
+                <video controls="" autoplay="" loop="" playsinline="">
+                  <source src="./videos/blackpink/fashionIcon.mp4" type="video/mp4">
+                </video>
+              </div>
+            </section>
+              
+            <section class="lookbook section" id="section__lookbook">
+              <div class="lookbook__inner">
+                <div class="lookbook__title">
+                  <img src="./image/common/lookbook_logo.png" alt="BLACKPINK LOOKBOOK">
+                  <span>멤버들을 클릭하여 룩북을 확인해보세요.</span>
+                </div>
+                <div class="lookbook__members">
+                  <a href="#">
+                    <img class="member" src="./image/blackpink/button/btn_photo_1.jpg" alt="JISOO">
+                  </a>
+                  <a href="#">
+                    <img class="member" src="./image/blackpink/button/btn_photo_2.jpg" alt="JENNIE">
+                  </a>
+                  <a href="#">
+                    <img class="member" src="./image/blackpink/button/btn_photo_3.jpg" alt="LISA">
+                  </a>
+                  <a href="#">
+                    <img class="member" src="./image/blackpink/button/btn_photo_4.jpg" alt="ROSE">
+                  </a>
+                </div>
+              </div>
+            </section>
+            
+            <section class="memberMatching section" id="section__memberMatching">
+              <div class="memberMatching__inner">
+                <div class="memberMatching__contents">
+                  <div class="contents__title">
+                    <img src="./image/common/matching_logo1.png" alt="WHICH MEMBER">
+                    <img src="./image/common/matching_logo2.png" alt="ARE YOU?">
+                  </div>
+                  <div class="contents__dsc">
+                    <p>
+                      본인의 평소 입는 스타일의 옷을 업로드해보세요.<br>
+                      AI가 어떤 멤버와 패션 성향이 가장 비슷한지 알려드립니다.
+                    </p>
+                  </div>
+                  <div class="contents__btn">
+                    <a href="#">바로가기</a>
+                  </div>
+                </div>
+                <div class="memberMatching__img">
+                  <img src="./image/blackpink/group/group_6.png" alt="GROUP Photo">
+                </div>
+              </div>
+            </section>
+            
+            <section class="request section" id="section__request">
+              <div class="request__inner">
+                <div class="request__title">
+                  <h2>패션 스캐너를 즐기는<br>
+                  또 다른 방법</h2>
+                  <p>
+                    <span>#FASHIONSCANNER</span><span>#요청하기</span>
+                  </p>
+                </div>
+                <div class="request__body">
+                  <div class="body__image">
+                    <div class="image__preview">
+                      <img src="./image/common/request_sample.jpg" alt="sample">
+                    </div>
+                    <div class="image__upload">
+                      <label class="material-icons" for="reqeust-file">upload_file<span>사진 업로드</span></label><input type="file" id="reqeust-file" accept="image/*" style="display: none;">
+                    </div>
+                  </div>
+                  <div class="body__info">
+                    <p>
+                      룩북에 추가하고 싶은 사진이 있으신가요?<br>
+                      블랙핑크 멤버가 입은 옷과 비슷한 옷을 한 번에 찾고 싶으신가요? 그럼 사진을 공유해주세요!<br>
+                      요청해 주신 사진은 패션 스캐너의 인공지능 시스템을 거쳐 룩북에 추가될 예정입니다.
+                    </p>
+                    <span>※ 이메일 입력 시 요청 사진이 업로드되면 알림 메일을 보내드립니다.</span>
+                    <form>
+                      <div class="info__input">
+                        <input type="email" placeholder="e-mail" value="">
+                        <p class="info__agree">
+                          &nbsp;&nbsp;* 이메일 입력은 선택사항입니다.
+                        </p>
+                        <label><input type="checkbox" disabled="">이메일 수집 및 이용에 대한 동의</label>
+                      </div>
+                    </form>
+                    <button>요청하기</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
           <footer>
             <div class="inner">
               <div class="info">
                 <div class="info__contact">
                   <ul>
-                    <li><img src="./images/black_pink/common/fs_s2_logo.png" alt="FASHION SCANNER"></li>
+                    <li><img src="./image/common/fs_s2_logo.png" alt="FASHION SCANNER"></li>
                     <li>
                     <p>
                       <span class="material-icons">place</span>서울특별시 강남구 선릉로 433 세방빌딩 6층
@@ -302,8 +368,10 @@
               </div>
             </div>
           </footer>
-
         </div>
     </div>
   </body>
+  <script type="text/javascript">
+    //var myFullpage = new fullpage('#full_page', {});
+  </script>
 </html>
