@@ -2,6 +2,10 @@ svg:not(:root).svg-inline--fa {
   overflow: visible;
 }
 
+.hover {
+  color : #f2a7bb !important;
+}
+
 .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
