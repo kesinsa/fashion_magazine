@@ -12,6 +12,18 @@ header nav {
   position: relative;
 }
 
+.show .lang {
+  display: none;
+}
+
+.navbar-collapse {
+  background: #000;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: #ff006a;
+}
+
 /* NAVIGATION LOGO */
 header .logo {
   position: absolute;
