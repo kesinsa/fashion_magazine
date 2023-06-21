@@ -26,6 +26,10 @@ header img {
   height: 20px;
 }
 
+.nav-link {
+  color : white;
+}
+
 /* HAMBURGER ICON */
 header .inner .material-icons {
   display: none;
