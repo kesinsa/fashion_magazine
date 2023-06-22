@@ -11,7 +11,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 #backspace {
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 5%;
   z-index: 9999;
