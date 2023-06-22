@@ -6,6 +6,17 @@ svg:not(:root).svg-inline--fa {
   color : #f2a7bb !important;
 }
 
+.none {
+  display: none;
+}
+
+#backspace {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 9999;
+}
+
 .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
