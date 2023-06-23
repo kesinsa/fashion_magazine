@@ -45,7 +45,7 @@
         var main_video = $("#main_video");
         if(id != "" & id != null) {
           var ids = "./videos/" + id + "/logo_teaser.mp4"
-          console.log(ids);
+          
           $("#main_video").attr("src", ids);
           $("#bg-video")[0].load();
           $("#section__slide").hide();
@@ -53,6 +53,16 @@
         } else {
           $("#contain_main").hide();
           $("#section__slide").show();
+        }
+      }
+
+      function fnHeaderPage(id) {
+        var cls = $("#contain_main").css('display');
+        if(cls == "none") {
+          alert("원하는 K-POP Star를 선택해주세요.");
+        } else {
+          var offset = $("#" + id).offset();
+          $('body').animate({scrollTop : offset.top}, 100);
         }
       }
 
@@ -72,18 +82,18 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <ul id="nav_header" class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                      <a class="nav-link" href="#section__introduction">매거진 소개</a>
+                      <a class="nav-link" onclick="fnHeaderPage('section__introduction')">매거진 소개</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#section__lookbook">트랜드</a>
+                      <a class="nav-link" onclick="fnHeaderPage('section__lookbook')">트랜드</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#section__memberMatching">멤버별 룩북</a>
+                      <a class="nav-link" onclick="fnHeaderPage('section__memberMatching')">멤버별 룩북</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#section__request">요청하기</a>
+                      <a class="nav-link" onclick="fnHeaderPage('section__request')">요청하기</a>
                     </li>
                   </ul>
                   <ul class="nav justify-content-end">
