@@ -1,6 +1,6 @@
 <html lang="ko">
   <head>  
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fullpage.css">
     <script src="./js/jquery.min.js"></script>
@@ -44,10 +44,15 @@
       function fnPageLoad(id) {
         var main_video = $("#main_video");
         if(id != "" & id != null) {
-          var ids = "./videos/" + id + "/logo_teaser.mp4"
+          var logo_teaser = "./videos/" + id + "/logo_teaser.mp4";
+          var magazine = "./videos/" + id + "/magazine.mp4";
+          var logo = "./image/" + id + "/logo.png"
           
-          $("#main_video").attr("src", ids);
+          $("#main_video").attr("src", logo_teaser);
+          $("#magazine_video").attr("src", magazine);
+          $("#magazine_iogo").attr("src", logo);
           $("#bg-video")[0].load();
+          $("#bg_video1")[0].load();
           $("#section__slide").hide();
           $("#contain_main").show();
         } else {
@@ -278,17 +283,16 @@
               <a class="material-icons " href="#section__magazine">expand_more</a>
             </div>
           </section>
-        </div>
-        <!--
+        
           <section class="magazine section" id="section__magazine">
             <div class="magazine__inner">
               <div class="magazine__title">
-                <img src="./image/blackpink/logo.png" alt="BLACKPINK">
+                <img id="magazine_iogo" src="">
               </div>
               <div class="magazine__info">
                 <div class="magazine__video">
-                  <video autoplay="" playsinline="" muted>
-                    <source src="./videos/blackpink/magazine.mp4" type="video/mp4">
+                  <video id="bg_video1" autoplay="" playsinline="" muted loop>
+                    <source id="magazine_video" src="" type="video/mp4">
                   </video>
                 </div>
                 <div class="magazine__dsc">
@@ -303,7 +307,8 @@
               </div>
             </div>
           </section>
-
+        </div>
+        <!--
           <section class="bpVideo section" id="section__bpVideo">
             <div class="bpVideo__inner">
               <video controls="" autoplay="" loop="" playsinline="">
