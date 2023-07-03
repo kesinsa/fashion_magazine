@@ -10944,6 +10944,12 @@ footer {
       opacity: 0.8;
   }
 
+  #magazine_iogo {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
   .magazine_video_title {
     background: #0009;
     width: 33%;

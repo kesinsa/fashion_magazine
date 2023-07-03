@@ -46,7 +46,7 @@
         if(id != "" & id != null) {
           var logo_teaser = "./videos/" + id + "/logo_teaser.mp4";
           var magazine = "./videos/" + id + "/magazine.mp4";
-          var logo = "./image/" + id + "/logo.png"
+          var logo = "./image/" + id + "/logo_bar.png"
           
           $("#main_video").attr("src", logo_teaser);
           $("#magazine_video").attr("src", magazine);
@@ -289,6 +289,7 @@
               <source id="magazine_video" src="" type="video/mp4">
             </video>
             <div class="magazine_video_title">
+              <img id="magazine_iogo" src="">
               <p>
                 패션 트렌드를 따라가는 사람들이 좋아하는 아이돌 블랙핑크<br>
                 한류 콘텐츠의 힘이 커지면서 블랙핑크의 행보가 패션업계에서도 '핫이슈'입니다.<br>
